@@ -30,8 +30,16 @@ nav {
 }
 
 #main{
-    display: inline-block;
+    /*display: table-cell;*/
     width: 100%;
+    /*Hacer las dos secciones del mismo alto automatico*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
     
 }
 
@@ -39,16 +47,18 @@ nav {
     padding: 20px;
     color: #333;
     background: #eee;
-    width: 66%;
+    width: 60%;
     float: left; 
+    margin-right: 10%;
 }
 
 #aside{
     padding: 20px;
     color: #333;
     background: #ebebeb;
-    width: 33%;
+    width: 30%;
     float: right; 
+    
     
     /*margin-left: 5px;*/
 }
